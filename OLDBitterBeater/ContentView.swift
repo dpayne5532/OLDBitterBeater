@@ -19,7 +19,8 @@ struct SheetView: View {
     "Go for a drive",
     "Take a quick shower",
     "Clip our toenails",
-    "Wipe down the countertops"
+    "Wipe down the countertops",
+    "Call your mother"
   ]
   
   var body: some View {
