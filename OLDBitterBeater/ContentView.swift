@@ -27,8 +27,16 @@ struct SheetView: View {
     ZStack {
       VStack {
         Spacer()
-        Text("Don't be so hard on yourself!")
-        Text("Finding the right person takes time!")
+        ZStack {
+          Color.gray.opacity(0.3)
+            .clipShape(Capsule())
+            .frame(width: 400, height: 200)
+          VStack {
+            
+            Text("Don't be so hard on yourself!")
+            Text("Finding the right person takes time!")
+          }
+        }
         Spacer()
         
         let ind = Int.random(in: 0..<activities.count)
@@ -64,10 +72,21 @@ struct SheetViewEE: View {
     ZStack {
       VStack {
         Spacer()
-        Text("Actually, it's probably not everyone else")
-          .font(.title2)
-        Text("Maybe we work on you for a bit?")
-          .font(.title2)
+        ZStack {
+          Color.gray.opacity(0.3)
+            .clipShape(Capsule())
+            .frame(width: 400, height: 200)
+            
+          VStack {
+            
+            Text("Actually, it's probably not everyone else")
+              .font(.title2)
+            Text("Maybe we work on you for a bit?")
+              .font(.title2)
+          }
+          
+        }
+        
         Spacer()
         
         let ind = Int.random(in: 0..<activities.count)
