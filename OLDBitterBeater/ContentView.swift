@@ -31,7 +31,7 @@ struct SheetView: View {
         .font(.title)
         .foregroundColor(.white)
         .padding()
-        .background(Color(.systemBlue))
+        .background(Color("obbPurp"))
         .clipShape(Capsule())
         .padding()
       }
@@ -61,7 +61,7 @@ struct SheetViewEE: View {
         .font(.title)
         .foregroundColor(.white)
         .padding()
-        .background(Color(.systemBlue))
+        .background(Color("obbPurp"))
         .clipShape(Capsule())
         .padding()
       }
@@ -81,6 +81,12 @@ struct ContentView: View {
     ZStack {
       
       VStack {
+        Image("logo")
+          .resizable()
+          .frame(width: 400, height: 300)
+          .scaledToFit()
+          .clipShape(Capsule())
+        
         Spacer()
         Text("Who are you frustrated with?")
           .font(.title2)
@@ -92,7 +98,7 @@ struct ContentView: View {
             Text("Myself")
           } .frame(width: 150, height: 75)
             .padding()
-            .background(Color(.systemBlue))
+            .background(Color("obbPurp"))
             .foregroundColor(.white)
             .clipShape(Capsule())
             .sheet(isPresented: $meSheet) {
@@ -105,7 +111,7 @@ struct ContentView: View {
             Text("Everyone Else")
           } .frame(width: 150, height: 75)
             .padding()
-            .background(Color(.systemBlue))
+            .background(Color("obbPurp"))
             .foregroundColor(.white)
             .clipShape(Capsule())
             
